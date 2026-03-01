@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Oma's Kast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ========== Header / Navigation（和主页一样）========== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h1>Oma's Kast</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#dutch-food">Dutch Food</a>
+                <a href="#lifestyle">Dutch Lifestyle</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== Shopping Cart Content ========== -->
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+
+        <!-- Empty Cart Message (hidden if cart has items) -->
+        <div class="empty-cart" style="display: none;">
+            <h2>Your cart is empty</h2>
+            <p>Add some delicious Dutch food to your cart!</p>
+            <a href="index.html" class="btn-continue-shopping">Continue Shopping</a>
+        </div>
+
+        <!-- Cart Content (hidden if cart is empty) -->
+        <div class="cart-content">
+            <!-- Left: Cart Items -->
+            <div class="cart-items">
+                <!-- JS will insert cart items here -->
+            </div>
+
+            <!-- Right: Cart Summary -->
+            <div class="cart-summary">
+                <h2>Ready to order?</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>€0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount:</span>
+                    <span>€0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping costs:</span>
+                    <span>Free</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total (Item):</span>
+                    <span>€0.00</span>
+                </div>
+
+                <button class="btn-checkout">Purchase Product</button>
+
+                <div class="delivery-info">
+                    <i class="fas fa-truck"></i>
+                    Orders today, delivered no later than tomorrow
+                </div>
+
+                <div class="payment-options">
+                    <h3>We accept:</h3>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa" style="font-size: 32px; color: #1A1F71;"></i>
+                        <i class="fab fa-cc-mastercard" style="font-size: 32px; color: #EB001B;"></i>
+                        <i class="fab fa-cc-paypal" style="font-size: 32px; color: #003087;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== Others Also Bought / Recommendations ========== -->
+        <div class="recommendations">
+            <h2>Others Also Bought</h2>
+            <div class="product-grid">
+                <!-- JS will insert recommended products here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Footer（和主页一样）========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Related Pages</h3>
+                    <a href="#">Bakery & Sweets</a>
+                    <a href="#">Breads & Fruit</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Confetti</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Savoury Foods</h3>
+                    <a href="#">Meats</a>
+                    <a href="#">Jelly</a>
+                    <a href="#">Vegetables</a>
+                    <a href="#">Soups & Seasonings</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Snacks & Toppings</h3>
+                    <a href="#">Chicken & Snacks</a>
+                    <a href="#">Bread Toppings</a>
+                    <a href="#">Condiments</a>
+                    <a href="#">Cheese</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Beverages</h3>
+                    <a href="#">Cereals</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Tea</a>
+                    <a href="#">Caffeine</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <button class="back-to-top">Back to Top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

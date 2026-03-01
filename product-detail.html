@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Oma's Kast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ========== Header / Navigation（和主页一样）========== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h1>Oma's Kast</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#dutch-food">Dutch Food</a>
+                <a href="#lifestyle">Dutch Lifestyle</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== Product Detail Main Content ========== -->
+    <div class="product-detail-container">
+        <div class="product-detail-main">
+            <!-- Left: Product Images -->
+            <div class="product-images">
+                <img src="https://via.placeholder.com/600x500" alt="Product" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="images/image-1.png" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="images/image-2.png" alt="Thumbnail 2" class="thumbnail">
+                    <img src="images/image-3.png" alt="Thumbnail 3" class="thumbnail">
+                </div>
+            </div>
+
+            <!-- Right: Product Info -->
+            <div class="product-info">
+                <h1>Freshness Guaranteed Sliced Dutch Bread</h1>
+
+                <div class="product-rating-detail">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="review-count">(12 reviews)</span>
+                </div>
+
+                <div class="product-price-large">€2.50</div>
+
+                <p class="product-description">
+                    Freshness Guaranteed Sliced Dutch Bread. Perfect for breakfast, sandwiches, and toast.
+                    Made with high-quality ingredients and traditional Dutch baking methods.
+                </p>
+
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <p>Wheat flour, water, yeast, salt, vegetable oil</p>
+                </div>
+
+                <div class="quantity-selector">
+                    <label>Quantity:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn">-</button>
+                        <input type="number" value="1" min="1" class="quantity-input">
+                        <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+
+                <button class="btn-add-to-cart-large">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- ========== Similar Products ========== -->
+        <div class="similar-products">
+            <h2>Similar Items You Might Like</h2>
+            <div class="product-grid">
+                <!-- JS will insert similar products here -->
+            </div>
+        </div>
+
+        <!-- ========== Customer Reviews ========== -->
+        <div class="reviews-section">
+            <h2>Customer Ratings & Reviews</h2>
+
+            <div class="review-summary">
+                <div class="review-score">4.2</div>
+                <div class="review-bars">
+                    <div class="review-bar">
+                        <span>5 stars</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 60%"></div>
+                        </div>
+                        <span>60%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>4 stars</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 25%"></div>
+                        </div>
+                        <span>25%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>3 stars</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 10%"></div>
+                        </div>
+                        <span>10%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>2 stars</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 3%"></div>
+                        </div>
+                        <span>3%</span>
+                    </div>
+                    <div class="review-bar">
+                        <span>1 star</span>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                        <span>2%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <div>
+                        <div class="reviewer-name">steffiesloane</div>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-date">May 16, 2025</div>
+                </div>
+                <p class="review-text">
+                    Great bread, better than most groceries! Fresh and tasty.
+                    Perfect for breakfast sandwiches and toast.
+                </p>
+            </div>
+
+            <div class="review-item">
+                <div class="review-header">
+                    <div>
+                        <div class="reviewer-name">markvanhouten</div>
+                        <div class="stars">⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-date">May 10, 2025</div>
+                </div>
+                <p class="review-text">
+                    Good quality bread. Stays fresh for several days. Would recommend!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Footer（和主页一样）========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Related Pages</h3>
+                    <a href="#">Bakery & Sweets</a>
+                    <a href="#">Breads & Fruit</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Confetti</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Savoury Foods</h3>
+                    <a href="#">Meats</a>
+                    <a href="#">Jelly</a>
+                    <a href="#">Vegetables</a>
+                    <a href="#">Soups & Seasonings</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Snacks & Toppings</h3>
+                    <a href="#">Chicken & Snacks</a>
+                    <a href="#">Bread Toppings</a>
+                    <a href="#">Condiments</a>
+                    <a href="#">Cheese</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Beverages</h3>
+                    <a href="#">Cereals</a>
+                    <a href="#">Drinks</a>
+                    <a href="#">Tea</a>
+                    <a href="#">Caffeine</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <button class="back-to-top">Back to Top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
