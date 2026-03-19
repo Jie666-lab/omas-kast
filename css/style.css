@@ -799,3 +799,75 @@ body {
     font-size: 28px;
     margin-bottom: 30px;
 }
+
+/* ============================================================
+   响应式布局（手机适配）
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* 导航栏 */
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero区域 */
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    /* 商品网格 */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-card img {
+        height: 140px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 商品详情页 */
+    .product-detail-main {
+        grid-template-columns: 1fr;
+    }
+
+    /* 购物车页 */
+    .cart-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .cart-item-actions {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
