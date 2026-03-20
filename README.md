@@ -67,8 +67,7 @@ omas-kast/
 
 **Mobile**
 
-<img src="./screenshots/index-mobile-2.png" width="300">
-<img src="./screenshots/cart-mobile.png" width="300">
+<img src="./screenshots/index-mobile-2.png" width="300"><img src="./screenshots/cart-mobile.png" width="300">
 
 ## What I Learned
 
