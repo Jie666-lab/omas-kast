@@ -31,11 +31,11 @@ Oma's Kast is a fictional grocery store website. This version is the foundation 
 
 No installation needed, this is a pure static site.
 
-# Open the Live Demo directly in your browser:
+## Open the Live Demo directly in your browser:
 
 https://jie666-lab.github.io/omas-kast/
 
-# To explore the source code, visit the GitHub repository:
+## To explore the source code, visit the GitHub repository:
 
 https://github.com/Jie666-lab/omas-kast
 
@@ -54,8 +54,8 @@ omas-kast/
 │   ├── image-3.png
 │   └── placeholder.jpg
 └── js/
-    ├── main.js
-    └── cart.js
+    └── main.js
+
 ```
 
 ## Screenshots
